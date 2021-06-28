@@ -1,6 +1,7 @@
 import { message } from 'antd';
 
-const ENDPOINT = 'http://0.0.0.0:8000/api/requests-loan/';
+//const ENDPOINT = 'http://0.0.0.0:8000/api/requests-loan/';
+const ENDPOINT = 'http://backend:8000/api/requests-loan/';
 
 
 export const list = (params) => {
