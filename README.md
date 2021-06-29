@@ -10,8 +10,9 @@ El deploy se realizar con Docker Compose.
 ## Instalacio de requisitos
 
 Utilice el siguiente enlace para conocer instalación de los requisitos:
-Docker: <https://docs.docker.com/engine/install/>
-Compose: <https://docs.docker.com/compose/install/>
+
+* Docker: <https://docs.docker.com/engine/install/>
+* Compose: <https://docs.docker.com/compose/install/>
 
 ## Clonar repositorio
 ```bash
