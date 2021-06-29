@@ -6,9 +6,9 @@ services:
     volumes:
       - $PWD/pg/data/db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASS}
   backend:
     build: backend
     #command: python manage.py runserver 0.0.0.0:8000
@@ -18,7 +18,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - SECRET_KEY=secret
+      - SECRET_KEY=${SECRET}
       - DB_ENGINE=django.db.backends.postgresql
       - DB_NAME=${DB_NAME}
       - DB_USER=${DB_USER}
@@ -29,12 +29,7 @@ services:
       - db
   frontend:
     build: frontend
-    command: npm start
     ports:
       - "3000:3000"
-    environment:
-      - NODE_ENV=${ENV}
-      - BABEL_ENV=${ENV}
     depends_on:
       - backend
-
