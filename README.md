@@ -94,7 +94,7 @@ docker ps
 ```
 <details>
   <summary>Resultado</summary>
-  
+```bash  
 CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS          PORTS                                                                          NAMES
 83eabdd1c8f9   prueba02_frontend   "/docker-entrypoint.…"   56 seconds ago   Up 54 seconds   0.0.0.0:80->80/tcp, :::80->80/tcp, 0.0.0.0:3000->3000/tcp, :::3000->3000/tcp   prueba02_frontend_1
 15c594cb431a   prueba02_backend    "sh start.sh db"         56 seconds ago   Up 55 seconds   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp                                      prueba02_backend_1
