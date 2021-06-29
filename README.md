@@ -2,14 +2,14 @@
 
 El deploy se realizar con Docker Compose.
 
-## Requisito
+## Requisitos
 
 * Docker Engine >=v20.10.7
 * Docker Compose >=1.27.4
 
 ## Instalacio de requisitos
 
-Utilice el siguiente enlace para conocer instalacion de los requisitos: 
+Utilice el siguiente enlace para conocer instalación de los requisitos: 
 Docker: <https://docs.docker.com/engine/install/>
 Compose: <https://docs.docker.com/compose/install/>
 
@@ -85,7 +85,7 @@ Creating prueba02_frontend_1 ... done
 ```
 </details>
 
-## Verificion de container
+## Verificación de container
 
 ```bash
 docker ps
